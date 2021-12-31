@@ -1,20 +1,14 @@
 <link rel="stylesheet" href="{{ url_for('main_menu.static', filename='css/main-menu.css') }}"/>
 
-{%
-    set menu_items = {
-        'homepage': '/',
-        'catalog': url_for('catalog.index'),
-        'about': url_for('about.index'),
-    }
-%}
-
-{% for item in menu_items %}
-    <li>
-        <a
-            href="{{ menu_items[item] }}"
-            {% if menu_items[item] == request.path %}
-                class="active"
-            {% endif %}
-        >{{ item | capitalize }}</a>
-    </li>
-{% endfor %}
+<div class= "nav" id="navbar" >
+    <a class="nav_item" href="Tournaments-main.html"> טורנירים</a>
+    <a class="nav_item" href="CreateGroup.html">יצירת קבוצות</a>
+    <a class="nav_item" href="Staff.html">ניהול צוות</a>
+    <a href="SignIn.html" id="login">LogOut</a>
+    <div id="login">
+        היי דינה!
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="navbar_res()">
+        <i class="fa fa-bars"></i>
+      </a>
+</div>

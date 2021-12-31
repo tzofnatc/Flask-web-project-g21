@@ -5,16 +5,10 @@
 body {
     margin: 0;
     font-family: var(--xsite-font-family);
+      display: flex;
+  flex-direction: column;
 }
 
-a[href] {
-    color: var(--link-color);
-}
-
-a[href]:visited {
-    color: var(--visited-link-color);
-}
-
-a[href]:active {
-    color: var(--active-link-color);
+html, body {
+  height: 100%;
 }

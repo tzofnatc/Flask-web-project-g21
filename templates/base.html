@@ -91,6 +91,7 @@ Base page blocks:
             {% block page_body_footer %}
                 <footer class="page-footer">
                   {% block page_body_footer_content %}
+                       {% include 'footer.html' %}
                   {% endblock %}
                 </footer>
             {% endblock %}

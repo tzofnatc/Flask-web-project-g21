@@ -11,7 +11,7 @@ from pages.homepage.homepage import homepage
 app.register_blueprint(homepage)
 
 ## About
-from pages.SignIn.SignIn import about
+from pages.about.about import about
 app.register_blueprint(about)
 
 ## Catalog
@@ -27,3 +27,7 @@ app.register_blueprint(page_error_handlers)
 ## Main menu
 from components.main_menu.main_menu import main_menu
 app.register_blueprint(main_menu)
+
+## footer
+from components.footer.footer import footer
+app.register_blueprint(footer)
