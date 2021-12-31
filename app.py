@@ -10,6 +10,10 @@ app.config.from_pyfile('settings.py')
 from pages.homepage.homepage import homepage
 app.register_blueprint(homepage)
 
+## SignIn
+from pages.SignIn.SignIn import SignIn
+app.register_blueprint(SignIn)
+
 ## About
 from pages.about.about import about
 app.register_blueprint(about)
