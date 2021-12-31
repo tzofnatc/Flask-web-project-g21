@@ -37,9 +37,7 @@ Base page blocks:
         {% block page_head_meta %}
             <base href="/"/>
             <meta charset="UTF-8"/>
-            <meta name="author" content="Barak Pinchovski"/>
-            <meta name="description" content="Flask skeleton project as a base to start developing on"/>
-            <meta name="keywords" content="flask, lean, skeleton, project, structure, environment, setup, template, fullstack, web, development, app, university, education"/>
+            <meta name="author" content="G21"/>
             {% block page_head_meta_extra %}{% endblock %}
         {% endblock %}
 
@@ -91,7 +89,7 @@ Base page blocks:
             {% block page_body_footer %}
                 <footer class="page-footer">
                   {% block page_body_footer_content %}
-                       {% include 'footer.html' %}
+                      {% include 'footer.html' %}
                   {% endblock %}
                 </footer>
             {% endblock %}
